@@ -1,0 +1,256 @@
+/* 1. UMUMIY SOZLAMALAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif; /* Maketga mos shrift */
+  line-height: 1.6;
+  color: #111;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* 2. KONTEYNER (SIZNING TALABINGIZ) */
+.container {
+  max-width: 1200px; /* Maksimal uzunlik */
+  width: 100%; /* To'liq yoyilishi */
+  margin: 0 auto; /* Markazga surish */
+  padding: 0 20px; /* Yon taraflardan masofa */
+}
+
+/* 3. YORDAMCHI KLASSLAR */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.decoration-line {
+  width: 70px;
+  height: 1px;
+  background-color: #9e7d60;
+  margin-bottom: 30px;
+}
+
+/* 4. TUGMALAR (BUTTONS) */
+.btn-outline {
+  display: inline-block;
+  padding: 18px 40px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+.btn-dark {
+  display: inline-block;
+  padding: 18px 40px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 5. HERO SECTION (TEPPA QISM) */
+.hero {
+  background-color: #111;
+  color: #fff;
+  padding: 100px 0 150px;
+  position: relative;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero .logo {
+  width: 100px;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 540px;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+/* 6. INFO SECTION (MATN VA RASM) */
+.info-section {
+  padding: 150px 0;
+}
+
+.info-section.reverse {
+  background-color: #f2f2f2;
+}
+
+.info-img img {
+  width: 100%;
+  max-width: 540px;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.info-text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+/* 7. MENU SECTION (QORA QISM) */
+.menu-section {
+  background-color: #111;
+  color: #fff;
+  padding: 120px 0;
+}
+
+.menu-intro {
+  flex: 1;
+}
+
+.menu-intro h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.menu-list {
+  flex: 1.4;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+.menu-item img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  color: #999;
+  font-size: 15px;
+}
+
+/* 8. GATHERING SECTION */
+.gathering {
+  padding: 150px 0;
+}
+
+.gathering-text h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.gathering-nav {
+  list-style: none;
+  margin-top: 60px;
+}
+
+.gathering-nav li {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gathering-nav li.active {
+  color: #111;
+  border-bottom: 2px solid #9e7d60;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* 9. RESERVATION (CTA) */
+.reservation {
+  background-color: #111;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.reservation h2 {
+  font-size: 40px;
+}
+
+/* 10. FOOTER */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 80px 0;
+  font-size: 14px;
+}
+
+.footer-info p {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* 11. ADAPTIVLIK (MOBILE) */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .info-section.reverse .container {
+    flex-direction: column-reverse;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+  }
+}
