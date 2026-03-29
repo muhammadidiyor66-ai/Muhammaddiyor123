@@ -1,4 +1,4 @@
-/* 1. UMUMIY SOZLAMALAR */
+/* 1. UMUMIY SOZLAMALAR
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +6,22 @@
 }
 
 body {
-  font-family: "League Spartan", sans-serif; /* Maketga mos shrift */
+  font-family: "League Spartan", sans-serif;
   line-height: 1.6;
   color: #111;
   background-color: #fff;
   overflow-x: hidden;
 }
 
-/* 2. KONTEYNER (SIZNING TALABINGIZ) */
+ 2. KONTEYNER (SIZNING TALABINGIZ) 
 .container {
-  max-width: 1200px; /* Maksimal uzunlik */
-  width: 100%; /* To'liq yoyilishi */
-  margin: 0 auto; /* Markazga surish */
-  padding: 0 20px; /* Yon taraflardan masofa */
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; 
 }
 
-/* 3. YORDAMCHI KLASSLAR */
+ 3. YORDAMCHI KLASSLAR 
 .flex {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* 4. TUGMALAR (BUTTONS) */
+/* 4. TUGMALAR (BUTTONS) 
 .btn-outline {
   display: inline-block;
   padding: 18px 40px;
@@ -67,7 +67,7 @@ body {
   font-weight: bold;
 }
 
-/* 5. HERO SECTION (TEPPA QISM) */
+/* 5. HERO SECTION (TEPPA QISM) 
 .hero {
   background-color: #111;
   color: #fff;
@@ -103,7 +103,7 @@ body {
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
 }
 
-/* 6. INFO SECTION (MATN VA RASM) */
+/* 6. INFO SECTION (MATN VA RASM) 
 .info-section {
   padding: 150px 0;
 }
@@ -127,7 +127,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* 7. MENU SECTION (QORA QISM) */
+/* 7. MENU SECTION (QORA QISM) 
 .menu-section {
   background-color: #111;
   color: #fff;
@@ -172,7 +172,7 @@ body {
   font-size: 15px;
 }
 
-/* 8. GATHERING SECTION */
+/* 8. GATHERING SECTION 
 .gathering {
   padding: 150px 0;
 }
@@ -203,7 +203,7 @@ body {
   padding-bottom: 5px;
 }
 
-/* 9. RESERVATION (CTA) */
+/* 9. RESERVATION (CTA) 
 .reservation {
   background-color: #111;
   color: #fff;
@@ -215,7 +215,7 @@ body {
   font-size: 40px;
 }
 
-/* 10. FOOTER */
+/* 10. FOOTER 
 .footer {
   background-color: #111;
   color: #fff;
@@ -228,7 +228,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* 11. ADAPTIVLIK (MOBILE) */
+/* 11. ADAPTIVLIK (MOBILE) 
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -253,4 +253,5 @@ body {
     width: 100%;
     height: 200px;
   }
-}
+} 
+*/
